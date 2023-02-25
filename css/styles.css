@@ -12868,6 +12868,10 @@ body {
   position: relative;
 }
 
+.form-contact #file {
+  display: none;
+}
+
 .form-contact .btn-add-new {
   height: 45px;
   min-width: 130px;
@@ -12875,6 +12879,11 @@ body {
   border: none;
   color: white;
   border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-contact .btn-add-new:hover {
@@ -12919,4 +12928,10 @@ body {
 .form-search .btn-search:hover,
 .btn-show:hover {
   color: #ccc;
+}
+
+#table-container {
+  background-color: #f3f3f3;
+  margin: 24px;
+  border-radius: 0.25rem;
 }
