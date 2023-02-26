@@ -1,4 +1,0 @@
-Tên,email,ngày tháng năm sinh,số điện thoại
-Nguyễn Văn A,nguyenvana@gmail.com,01/01/1990,0987654321
-Trần Thị B,tranthib@gmail.com,02/02/1991,0123456789
-Phạm Văn C,phamvanc@gmail.com,03/03/1992,0369852471

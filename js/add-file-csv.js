@@ -25,16 +25,16 @@ csvFileInput.addEventListener('change', (event) => {
         const tableRow = tableHeader.insertRow();
 
         for (let i = 0; i < headers.length; i++) {
-            const th = document.createElement('td');
+            const th = document.createElement('th');
             th.innerText = headers[i];
             tableRow.appendChild(th);
-        }
 
+        }
         for (let i = 0; i < data.length; i++) {
             const tableRow = table.insertRow();
             for (let j = 0; j < headers.length; j++) {
                 const tableCell = tableRow.insertCell();
-                tableCell.innerText = data[i][headers[j]];
+                tableCell.innerText = data[i][headers[j]] ? data[i][headers[j]] : '';
             }
         }
 

@@ -12935,3 +12935,22 @@ body {
   margin: 24px;
   border-radius: 0.25rem;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  color: #000;
+  background-color: #ccc;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,38 @@
+body {
+    background-color: #ccc;
+}
+
+.contact__status,
+.credential__status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.contact__status--pending {
+    background-color: #FFA266;
+}
+
+.contact__status--connected {
+    background-color: #6BC18D;
+}
+
+.credential__status--draft {
+    background-color: #9E9E9E;
+}
+
+.credential__status--signed {
+    background-color: #D7A9DF;
+}
+
+.credential__status--sent {
+    background-color: #66AFFF;
+}
+
+.sub-menu {
+    padding: 0 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
