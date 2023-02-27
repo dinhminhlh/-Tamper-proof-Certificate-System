@@ -28,13 +28,36 @@ csvFileInput.addEventListener('change', (event) => {
             const th = document.createElement('th');
             th.innerText = headers[i];
             tableRow.appendChild(th);
-
         }
-        for (let i = 0; i < data.length; i++) {
+
+        //Thêm cột cuối cùng
+        const lastHeader = document.createElement('th');
+        lastHeader.innerText = '';
+        tableRow.appendChild(lastHeader);
+
+        for (let i = 0; i < data.length - 1; i++) {
             const tableRow = table.insertRow();
-            for (let j = 0; j < headers.length; j++) {
-                const tableCell = tableRow.insertCell();
-                tableCell.innerText = data[i][headers[j]] ? data[i][headers[j]] : '';
+            for (let j = 0; j < headers.length + 1; j++) {
+                if (j === headers.length) {
+                    const tableCell = tableRow.insertCell();
+                    const span = document.createElement('span');
+                    span.classList.add('sub-menu');
+                    const icon = document.createElement('i');
+                    icon.classList.add('fa-solid', 'fa-ellipsis');
+                    span.appendChild(icon);
+                    tableCell.appendChild(span);
+                } else {
+                    const tableCell = tableRow.insertCell();
+                    if (j === 3) {
+                        const span = document.createElement('span');
+                        span.innerText = data[i][headers[j]] ? data[i][headers[j]] : '';
+                        span.classList.add('contact__status');
+                        span.classList.add('contact__status--pending');
+                        tableCell.appendChild(span);
+                    } else {
+                        tableCell.innerText = data[i][headers[j]] ? data[i][headers[j]] : '';
+                    }
+                }
             }
         }
 
