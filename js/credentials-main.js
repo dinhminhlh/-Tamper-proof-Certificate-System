@@ -114,11 +114,10 @@ function renderCredentialList(credentials) {
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Contact Status</span>
                     <strong class="tb-cre-value contact-status"
-                    style=${
-                      cre.contactStatus === "Pending Connection"
-                        ? "background-color:#ee9064"
-                        : "background-color:#16FF00"
-                    }
+                    style=${cre.contactStatus === "Pending Connection"
+        ? "background-color:#ee9064"
+        : "background-color:#16FF00"
+      }
                       >${cre.contactStatus}</strong
                     >
                   </td>

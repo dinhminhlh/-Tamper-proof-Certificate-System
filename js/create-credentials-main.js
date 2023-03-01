@@ -4,7 +4,7 @@ const panes = document.querySelectorAll(".cre-tab-pane");
 const notify = `
         <div class="credential-notify success">
           <div class="img-notify">
-            <img src="../assets/images/cre-successful-notify.jpg" alt="" />
+            <img src="assets/img/cre-successful-notify.jpg" alt="" />
           </div>
           <div class="notify-content">
             <span class="notify-content-success"
@@ -51,9 +51,8 @@ const uploadFileError = {
 
 const handleUploadFileNotify = ({ type, icon, msg }) => {
   return `
-      <i class="popup-upload-file-notify-icon ${icon}" style="color: ${
-    type === "success" ? "rgb(121, 255, 121)" : "rgb(255, 56, 56)"
-  }"></i>
+      <i class="popup-upload-file-notify-icon ${icon}" style="color: ${type === "success" ? "rgb(121, 255, 121)" : "rgb(255, 56, 56)"
+    }"></i>
       <span class="popup-content">${msg}</span>
   `;
 };
