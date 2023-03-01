@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header  -->
+      <header class="header">
+        <div class="header-left">
+          <a href="" class="header__logo">
+            <img
+              class="header__logo-img"
+              src="../assets/images/logo.png"
+              alt="prism-logo"
+            />
+          </a>
+          <span class="console">Managerment Console</span>
+        </div>
+        <div class="header-right">
+          <div class="fu-select">
+            <div class="fu-logo">
+              <img src="../assets/images/fu.png" alt="" />
+            </div>
+            <select name="" id="">
+              <option selected disabled>Free University</option>
+              <option class="fu-option" value="">Option 1</option>
+              <option class="fu-option" value="">Option 2</option>
+              <option class="fu-option" value="">Option 3</option>
+              <option class="fu-option" value="">Option 4</option>
+              <option class="fu-option" value="">Option 5</option>
+            </select>
+          </div>
+          <div class="lang-select">
+            <div class="country-flag">
+              <img src="../assets/images/flag.png" alt="" />
+            </div>
+            <select name="" id="">
+              <option class="lang-option" value="">English</option>
+              <option class="lang-option" value="">Vietnamese</option>
+              <option class="lang-option" value="">Korean</option>
+              <option class="lang-option" value="">Chinese</option>
+              <option class="lang-option" value="">Indian</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <main class="credential__content">
+        <h2 id="cre__content-header">New Credential</h2>
+        <!-- Tab UI -->
+        <ul class="cre-step-tabs">
+          <li class="cre-tab">
+            <span class="step-number">Step 1</span>
+            <span class="step-name">Select Credential Template</span>
+          </li>
+          <li class="cre-tab">
+            <span class="step-number">Step 2</span>
+            <span class="step-name">Assign Recipients</span>
+          </li>
+          <li class="cre-tab active">
+            <span class="step-number">Step 3</span>
+            <span class="step-name">Upload Credential Information</span>
+          </li>
+          <li class="cre-tab">
+            <span class="step-number">Step 4</span>
+            <span class="step-name">Check and Create Credential</span>
+          </li>
+        </ul>
+        <!-- Tab pane  -->
+        <ul class="cre-panes">
+          <li class="cre-tab-pane">
+            <h1>Step 1</h1>
+          </li>
+          <li class="cre-tab-pane">
+            <h1>Step 2</h1>
+          </li>
+          <li class="cre-tab-pane active">
+            <!-- <h1>Step 3</h1> -->
+          </li>
+          <li class="cre-tab-pane">
+            <h1>Step 4</h1>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <!-- Popup notification  -->
+    <div class="popup-upload-file-notify"></div>
+    <!-- JS  -->
+    <script src="./main.js"></script>
+  </body>
+</html>
