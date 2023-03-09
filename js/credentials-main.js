@@ -97,34 +97,34 @@ function renderCredentialList(credentials) {
                   </td>
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Credentials Type</span>
-                    <strong class="tb-cre-value">${cre.credentialType}</strong>
+                    <div class="tb-cre-value">${cre.credentialType}</div>
                   </td>
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Contact Name</span>
-                    <strong class="tb-cre-value">${cre.contactName}</strong>
+                    <div class="tb-cre-value">${cre.contactName}</div>
                   </td>
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Example ID</span>
-                    <strong class="tb-cre-value">${cre.exampleID}</strong>
+                    <div class="tb-cre-value">${cre.exampleID}</div>
                   </td>
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Date Sign</span>
-                    <strong class="tb-cre-value">${cre.dateSign}</strong>
+                    <div class="tb-cre-value">${cre.dateSign}</div>
                   </td>
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Contact Status</span>
-                    <strong class="tb-cre-value contact-status"
+                    <div class="tb-cre-value contact-status"
                     style=${cre.contactStatus === "Pending Connection"
-        ? "background-color:#ee9064"
-        : "background-color:#16FF00"
+        ? "background-color:#FFA266"
+        : "background-color:#6BC18D"
       }
-                      >${cre.contactStatus}</strong
+                      >${cre.contactStatus}</div
                     >
                   </td>
                   <td class="cre-tb-col">
                     <span class="tb-cre-fieldname">Credential Status</span>
-                    <strong class="tb-cre-value credential-status"
-                      >${cre.credentialStatus}</strong
+                    <div class="tb-cre-value credential-status"
+                      >${cre.credentialStatus}</div
                     >
                   </td>
                   <td class="cre-tb-col">
